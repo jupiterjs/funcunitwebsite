@@ -40,8 +40,30 @@
         </div>
         <div id='content-wrapper'>
           <div id='content'>
-            <h2>FuncIt - FuncUnit IDE</h2>
-            <p>FucnIt is a in-browser IDE for FuncUnit. It allows you to record your actions and author tests from them. You can <a href="#">try FuncIt here</a>.</p>
+            <div id='container'>
+        <div class='step'>
+          <div class='number'>1</div>
+          Drag the following link into your bookmarks bar (in Firefox):
+          <a href="javascript:(function(){var head=document.getElementsByTagName('head')[0],script=document.createElement('script');script.type='text/javascript';script.src='/funcit/bookmarklet/bookmarklet.js';head.appendChild(script);})(); void 0" id="funcit-link">FuncIt</a>
+          <img alt="Arrow" id="arrow" src="images/arrow.png"/>
+          <img alt="1" src="images/steps/1.png"/>
+        </div>
+        <div class='step'>
+          <div class='number'>2</div>
+          Open another web page (like Google).
+          <img alt="2" src="images/steps/2.png"/>
+        </div>
+        <div class='step'>
+          <div class='number'>3</div>
+          Click the bookmarklet.
+          <img alt="3" src="images/steps/3.png"/>
+        </div>
+        <div class='step last-step'>
+          <div class='number'>4</div>
+          Use Funcit to write and run tests for that web page.
+          <img alt="4" src="images/steps/4.png"/>
+        </div>
+      </div>
           </div>
           <div id='sidebar'>
             <p class='greenbox' id='what-is-funcunit'><strong>FuncUnit</strong> is a free, open source, web application testing framework that focuses on making tests fun and enjoyable.<br /><br/ ><strong>If you know jQuery, you already know the API.</strong><br /><br />FuncUnit is the part of the full stack JavaScript framework - <strong>JavaScriptMVC</strong></p>
