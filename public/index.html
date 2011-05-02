@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>FuncUnit</title>
+    <link rel='stylesheet/less' href='/stylesheets/site.less' />
+    
+  </head>
+  <body>
+    <div id='wrapper'>
+      <div id='header-wrapper'>
+        <div id='header'>
+          <a href="http://www.jupiterit.com" id="jupiter-product"><img alt="Another Jupiter product" src="images/jupiter_product.png"/></a>
+          <div id='dl-funcunit'>
+            <a href='https://github.com/downloads/jupiterjs/funcunit/funcunit-1.0.zip'>
+              <strong>FuncUnit v1.0</strong>
+              The testing framework
+            </a>
+            <a class='button' href='https://github.com/downloads/jupiterjs/funcunit/funcunit-1.0.zip'>Download</a>
+          </div>
+          <div id='try-funcit'>
+            <a href='#'>
+              <strong>FuncIt</strong>
+              The FuncUnit IDE
+            </a>
+            <a class='button' href='#'>Try it Now</a>
+          </div>
+        </div>
+      </div>
+      <div id='container'>
+        <div id='navigation'>
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="getting_started.html">Getting Started</a></li>
+            <li><a href="http://javascriptmvc.com/docs/FuncUnit.html">Documentation</a></li>
+            <li><a href="funcit.html">FuncIt</a></li>
+            <li><a href="syn.html">Syn</a></li>
+            <li><a href="follow.html">Follow &amp; Community</a></li>
+            <li><a href="code.html">Code</a></li>
+          </ul>
+        </div>
+        <div id='content-wrapper'>
+          <div id='content'>
+            <div class='info'>
+              <img alt="Info" src="images/info.jpg"/>
+              <div class='part'>
+                <h2>Author tests directly in browser with FuncIt</h2>
+                <p><strong>Write, run, and debug tests in the browser.</strong></p>
+                <p>Writing and debugging tests is super easy with FuncUnit. Just open a test page with your favorite browser and turn on the debugger.</p>
+                <p>Or, use FuncIT, the FuncUnit IDE, to record your actions and write test code for you!</p>
+              </div>
+              <div class='part'>
+                <h2>Use familiar jQuery like syntax</h2>
+                <p><strong>Do you like short, terse, flexible tests? How about chaining?</strong></p>
+                <p><strong>FuncUnit's API is just like jQuery's.</strong> If you know jQuery, you already know FuncUnit's API.</p>
+              </div>
+              <div class='part last-part'>
+                <h2>Run in any browser or automate it with Selenium</h2>
+                <p>FuncUnit supports all modern browsers. You can run your tests in IE 6+, FF 2+, Safari 4+, Opera 9+, Chrome, on PC, Mac, and Linux.</p>
+                <p>FuncUnit also allows your tests to be run with Selenium. That way <strong>You can have completely automated test suite</strong>.</p>
+              </div>
+              <div class='clear'></div>
+            </div>
+            <h2>Features</h2>
+            <ul>
+              <li><strong>Functional Testing</strong> - Test complex behavior like drag-drop.</li>
+              <li><strong>High Fidelity</strong> - Create identical events that a mouse and keyboard create. Run tests in a real browser.</li>
+              <li><strong>Automated</strong> - Test multiple browsers from the command line.</li>
+              <li><strong>Easy to Write</strong> - Write, run, and debug tests in the browser, without configuring a server or other tool. Write tests in a familiar jQuery-style API.</li>
+              <li><strong>Free</strong> - It's open source! Save yourself $5,000 for similar solutions.</li>
+              <li><strong>Multi-system</strong> - Runs in IE 6+, FF 2+, Safari 4+, Opera 9+, Chrome, on PC, Mac, and Linux.</li>
+            </ul>
+            <h2>See an example</h2>
+            <p>The following tests that an AutoSuggest returns 5 results.<br /><a href="http://javascriptmvc.com/funcunit/autosuggest/funcunit.html">See it in action!</a> (Make sure you turn off your popup blocker!).</p>
+            <pre><code class='javascript'>module("autosuggest",{&#x000A;  setup: function() {&#x000A;    S.open('autosuggest.html')&#x000A;  }&#x000A;});&#x000A;&#x000A;test("JavaScript results",function(){&#x000A;  S('input').click().type("JavaScript")&#x000A;&#x000A;  // wait until we have some results&#x000A;  S('.autocomplete_item').visible(function(){&#x000A;    equal( S('.autocomplete_item').size(), 5, "there are 5 results")&#x000A;  })&#x000A;});&#x000A;</code></pre>
+            <p>Read more in the <a href="http://javascriptmvc.com/docs/FuncUnit.html">documentation</a>.</p>
+          </div>
+          <div id='sidebar'>
+            <p class='greenbox' id='what-is-funcunit'><strong>FuncUnit</strong> is a free, open source, web application testing framework that focuses on making tests fun and enjoyable.<br /><br/ ><strong>If you know jQuery, you already know the API.</strong><br /><br />FuncUnit is the part of the full stack JavaScript framework - <strong>JavaScriptMVC</strong></p>
+            <div id='twitter-feed-wrapper'>
+              <div id='twitter-feed'></div>
+              <a href="http://www.twitter.com/funcunit" title="Follow @funcunit"><img alt="Follow twitter" src="images/follow_twitter.png"/></a>
+            </div>
+          </div>
+          <div class='clear'></div>
+          <a href="http://www.javascriptmvc.com" id="jmvc-stack"><img alt="Javascriptmvc" src="images/javascriptmvc.jpg"/></a>
+        </div>
+      </div>
+    </div>
+    <div id='bottom-bar'>
+      <a href="http://jupiterit.com">&copy; Jupiter IT - JavaScriptMVC Training and Support</a>
+    </div>
+    <script language="javascript" src="javascripts/jquery.js" type="text/javascript"></script><script language="javascript" src="javascripts/jquerymx-1.0.custom/jquerymx-1.0.custom.js" type="text/javascript"></script><script language="javascript" src="javascripts/application.js" type="text/javascript"></script><script language="javascript" src="javascripts/less-1.0.40.js" type="text/javascript"></script>
+  </body>
+</html>
