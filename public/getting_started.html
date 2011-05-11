@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   Create a JS file (pages/mypage_test.js) for your tests. The skeleton should like:
-                  <pre><code class='javascript'>module("APPNAME", {&#x000A;  setup: function() {&#x000A;    // opens the page you want to test&#x000A;    $.open("myPage.html");&#x000A;  }&#x000A;})&#x000A;&#x000A;test("page has content", function(){&#x000A;  ok( S("body *").size(), "There be elements in that there body")&#x000A;})</code></pre>
+                  <pre><code class='javascript'>module("APPNAME", {&#x000A;  setup: function() {&#x000A;    // opens the page you want to test&#x000A;    S.open("myPage.html");&#x000A;  }&#x000A;})&#x000A;&#x000A;test("page has content", function(){&#x000A;  ok( S("body *").size(), "There be elements in that there body")&#x000A;})</code></pre>
                 </li>
                 <li>
                   Open your html page (mypage_test.html) in a browser. Did it pass? If not check the paths.
