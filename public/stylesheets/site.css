@@ -117,6 +117,19 @@ body {
   margin-top: 20px;
   display: block;
 }
+#header-wrapper #header #dl-funcunit a strong span {
+  background: #005a94;
+  color: white;
+  font-size: 12px;
+  text-shadow: 0px -1px #004370;
+  padding: 3px 5px;
+  letter-spacing: 0px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  line-height: 10px;
+  vertical-align: middle;
+}
 #header-wrapper #header #dl-funcunit a:hover {
   color: #005a94;
   border: none;
@@ -167,6 +180,19 @@ body {
   letter-spacing: -1px;
   margin-top: 20px;
   display: block;
+}
+#header-wrapper #header #try-funcit a strong span {
+  background: #005a94;
+  color: white;
+  font-size: 12px;
+  text-shadow: 0px -1px #004370;
+  padding: 3px 5px;
+  letter-spacing: 0px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  line-height: 10px;
+  vertical-align: middle;
 }
 #header-wrapper #header #try-funcit a:hover {
   color: #005a94;
@@ -577,4 +603,59 @@ pre {
 .small {
   font-size: 85%;
   color: #666666;
+}
+.step {
+  border-bottom: 1px dotted #333333;
+  position: relative;
+  margin: 20px 0 0 40px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  color: #363636;
+  float: left;
+  width: 570px;
+  text-shadow: 0px 1px white;
+}
+.step a { color: #363636; }
+.step a:hover { text-decoration: none; }
+.step #funcit-link {
+  display: inline-block;
+  right: 50px;
+  color: white;
+  padding: 0 10px;
+  background: #414141;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #242424;
+  text-shadow: 0px 1px black;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+}
+.step img {
+  display: block;
+  margin-top: 10px;
+  margin-left: -3px;
+}
+.step #arrow {
+  position: absolute;
+  right: 0;
+  margin-top: -63px;
+  margin-left: 0;
+}
+.step .number {
+  position: absolute;
+  margin: -7px 0 0 -40px;
+  height: 29px;
+  width: 28px;
+  line-height: 29px;
+  color: white;
+  text-shadow: 0px 1px #364c18;
+  text-align: center;
+  font-size: 18px;
+  background: url(../images/number.png);
+}
+.last-step {
+  padding-bottom: 0;
+  border-bottom: none;
 }
